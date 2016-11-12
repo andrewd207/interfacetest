@@ -24,7 +24,7 @@ implementation
 
 procedure TMyObject.DoSomething;
 begin
-  // try a couple of thing so to cause a crash if things are not correct.
+  // try a couple of things to cause a crash if things are not correct.
   WriteLn('Class = ', ClassName, ' SomeData = ', FSomeData);
   WriteLn('InheritsFrom TObject = ', TObject.InheritsFrom(TObject));
 end;

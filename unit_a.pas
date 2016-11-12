@@ -70,7 +70,7 @@ var
 begin
   for i := 0 to Count-1 do
   begin
-    // Esentially casting IMyInterface(TObject)
+    // lookup IMyInterface from Object
    (Items[i].GetObject as IMyInterface).DoSomething;
   end;
 end;
