@@ -83,6 +83,9 @@ begin
   begin
     // Esentially casting IMyInterface(TMyObject)
     IMyInterface(TMyObject(Items[i].GetObject)).DoSomething;
+    // The same as
+    // TMyObject(Items[i].GetObject).DoSomething;
+    // which is probably a bit faster. Why have the interface?
   end;
 end;
 
